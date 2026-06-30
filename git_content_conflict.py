@@ -1,5 +1,5 @@
 def greet():
-    #return "Hello Python"
-    return "Hello Java"
+    return "Hello Python"
+    
 
 print(greet())
