@@ -1,0 +1,2 @@
+name = "ML"
+print(name)
