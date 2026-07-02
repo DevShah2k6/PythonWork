@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data(BMI Calculator)</title>
+</head>
+<body>
+  
+        <label>Enter Your Weight:</label>
+        <input type="number" name="weight" id="weight" placeholder="Enter Your Weight">
+        <br><br>
+        <label>Enter Your Height:</label>
+        <input type="number" name="height" id="height" placeholder="Enter Your Height">
+        <br><br>
+        <button onclick="Calculate()">Calculate</button>
+    <h3 id="result"></h3>
+
+    <script>
+        async function Calculate()
+        {
+            const weight = document.getElementById('weight').value
+            const height = document.getElementById('height').value
+            console.log(weight)
+            console.log(height)
+            // here fetch is used to talk woth fastpai backend part and
+            // send
+            const response = await fetch(`/result`,{
+                method:"POST"    ,
+                headers: {
+            "Content-Type": "application/json"
+        },
+        // this below one is request body
+            body: JSON.stringify({
+            weight: Number(weight),
+            height: Number(height)
+            })
+        })
+            console.log(response)
+            const data = await response.json()
+
+            document.getElementById('result').innerHTML = data.msg+"<br>"+JSON.stringify(data.data);
+
+
+        }
+    </script>
+</body>
+</html>
