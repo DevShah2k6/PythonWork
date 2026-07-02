@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // Send student data to FastAPI using POST request
+            const response = await fetch("/students", {
+                method: "GET",
+                // Tell server that data is in JSON format
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                // Convert JavaScript object into JSON string
+                body: JSON.stringify(studentData)
+            });
+            // Get response returned by FastAPI
+            const data = await response.json();
+            console.log(data.msg)
+            console.log(data.data)
+           
+            document.getElementById("result").innerHTML =
+            element.msg + "<br>" + JSON.stringify(element.data);
+            
+            // Show success message and returned student data on page
+    </script>
+    <table>
+        <tr>data.data</tr>
+    </table>
+</body>
+</html>
