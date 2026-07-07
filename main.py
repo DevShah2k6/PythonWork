@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import spacy
 from models import LogitsticregressionModel,DecisionTreeclassfierModel,RandomForestclassfierModel,SVCModel,MutinomialNBModel,run_model,LinearSvcModel,KNeighboursclassifierModel,XgbclassifierModel,CatBoostclassiferModel
-from errormetrics import model_classfication_report,model_accuracy,model_confusion_matrix
+from evaluation import model_classfication_report,model_accuracy,model_confusion_matrix
 from prediction import prediction
 from preprocessingtext import preprocess_data
 from preprocessingdataframe import preproces_df

@@ -8,7 +8,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from xgboost import XGBClassifier
 from catboost import CatBoostClassifier
 from encoded import encoding
-from errormetrics import model_classfication_report,model_accuracy,model_confusion_matrix
+from evaluation import model_classfication_report,model_accuracy,model_confusion_matrix
 #here it follows the o->open for extensiona dn closed for chnaging the code 
 #foloows the solid principle
 
