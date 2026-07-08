@@ -12,7 +12,7 @@ from evaluation import model_classfication_report,model_accuracy,model_confusion
 #here it follows the o->open for extensiona dn closed for chnaging the code 
 #foloows the solid principle
 
-def build_logitstic_regression_model():
+def build_logistic_regression_model():
     '''"""
     Trains a Logistic Regression classification model.
      It learns patterns from training data and predicts categories

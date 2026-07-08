@@ -17,7 +17,7 @@ def feature_importance_dtc(model,vectorizer):
     """
     plt.figure(figsize=(12,14))
     plt.bar(vectorizer.get_feature_names_out(),model.feature_importances_)
-    plt.title("Feature Importances of Decision Tree Classifer")
+    plt.title("Feature Importances of Decision Tree Classifier")
     plt.xticks(rotation=45)
     plt.show()
 
@@ -29,6 +29,6 @@ def feature_importance_rfc(model,vectorizer):
     """
     plt.figure(figsize=(12,14))
     plt.bar(vectorizer.get_feature_names_out(),model.feature_importances_)
-    plt.title("Feature Importances of Random Tree Classifer")
+    plt.title("Feature Importances of Random Tree Classifier")
     plt.xticks(rotation=45)
     plt.show()

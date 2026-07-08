@@ -22,7 +22,7 @@ def preprocess_data(news_df):
 
 
 
-    #here pip fucntion makes the tokization process fatser by readinng multiple sentences at a time 
+   # nlp.pipe() speeds up tokenization by processing multiple texts at once
     doc = nlp.pipe(news_df["description"])
 
     print(news_df["Category"].nunique())

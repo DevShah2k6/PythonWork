@@ -35,9 +35,15 @@ The text is preprocessed, converted into numerical features using TF-IDF, and th
 
 ## Dataset
 
-BBC News Dataset
+This project uses the **BBC News Dataset**, which contains news articles labeled with their respective categories (e.g., business, sports, politics, tech, entertainment).
 
-> Place the dataset file (`BBC news dataset.csv`) in the project root directory before running the project.
+- **Source:** [BBC News Dataset on Kaggle](https://www.kaggle.com/datasets/shineucc/bbc-news-dataset)
+- **File required:** `BBC news dataset.csv`
+
+### Setup Instructions
+1. Download the dataset from the link above.
+2. Place the file (`BBC news dataset.csv`) in the project's root directory.
+3. Ensure the filename matches exactly, as the code reads it directly using this name.
 
 ---
 

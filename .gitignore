@@ -9,3 +9,6 @@ catboost_info/
 
 # Dataset
 BBC news dataset.csv
+
+#File 
+vectorizer.pkl
