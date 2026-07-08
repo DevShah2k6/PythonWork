@@ -23,7 +23,7 @@ def main():
     #Showing the last five rows
     print(news_df.tail())
 
-    #Showing the 
+    #Showing the dataset info
     print(news_df.info())
 
     news_df_clean = preprocess_df(news_df=news_df)
@@ -38,8 +38,8 @@ def main():
 
     category_mapping={}
     #Showing the Label and Category
-    for label,categroy in zip(encoded_category,category):
-        category_mapping[label] = categroy
+    for label,category in zip(encoded_category,category):
+        category_mapping[label] = category
 
     # Split raw text
     x_train, x_test, y_train, y_test = train_test_split_data(
@@ -56,7 +56,7 @@ def main():
     # Save the trained vectorizer to a file for later use in predictions
     pickle.dump(vectorize_object, open("vectorizer.pkl", "wb"))
 
-    
+
     best_acc=0
     best_model = None
     # Models
@@ -83,10 +83,10 @@ def main():
             best_acc = acc
             best_model = model
 
+    user_input = input("Enter Text:-")
     if not user_input.strip():
         print("Error: No input provided.")
     else:
-        user_input = input("Enter Text:-")
         print(category_mapping[prediction(best_model,[user_input])])
 
 
