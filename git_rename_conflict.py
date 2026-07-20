@@ -1,0 +1,2 @@
+name="Java"
+print(name)
