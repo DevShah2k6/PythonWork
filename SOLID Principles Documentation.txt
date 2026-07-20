@@ -1,0 +1,185 @@
+Table of Contents
+1. Introduction
+2. Single Responsibility Principle
+3. Open/Closed Principle
+4. Liskov Substitution Principle
+5. Interface Segregation Principle
+6. Dependency Inversion Principle
+7. Comparison Table
+8. Conclusion
+
+Summary of SOLID Principles
+
+1.Introduction
+--> SOLID Principles are the principles used for the following purposes:-
+easy to debug
+easy to test
+easy to run
+readable code
+
+
+-->Means in short the SOLID Principles are used to make the good class which is easy to understand and readable.
+
+Following is the Rules for writing a good class Code:
+S-->Single Responsibility Principle
+O->Open/Closed Principle
+L-->Liskov Substitution Principle
+I-->Interface Segregation Principle
+D-->Dependency Inversion Principle
+
+
+2.S-->Single Responsibility Principle
+-->One class should have single responsibility
+eg.for order class the order id then food order methods are allowed then if we write the process payment method in that then it should not be allowed in that.
+
+code example
+class MovieTicket:
+def __init__(self,movie_id):
+	self.movie_id = movie_id
+def movie_name(self):
+	pass
+
+#method not allowed here
+def process_payment(self):
+	pass
+
+class Payment:
+	def process_payment(self):
+		pass
+
+mv = MovieTicket()
+mv.movie_name
+pay = Payment()
+pay.process_payment()
+
+3.O-->Open/Closed Principle
+-->here it states that it is open for the extension of code (means for new feature to add add new code ,do not change the existing code)
+
+example:-for payment class in that payment method is not asked as in future if we want to add more methods then we have to change the code 
+so making the separate class for each payment method so that in future the new payment method will come so we can make new class instead of editing the existing code.
+
+Code Example
+class Car:
+	def __init__(self,name):
+		self.name=name
+	def brake()
+		print("Brake")
+	def drive()
+		print("Drive")
+
+	#for below method we can make the new class
+	def bluetooth_speaker()
+		print("Bluetooth Speaker")
+
+
+
+class BluetoothSpeaker:
+	def bluetooth_speaker()
+		print("speaker")
+
+
+4.L-->Liskov Substitution Principle
+-->here in this it states that the child class should be behave same as the parent class (child class should behave same as parent class).
+-->eg . as Car is parent class and if child class like Toyota ,BMW should be behave as same as parent class.
+
+
+
+class Car:
+	def __init__(self,name):
+		self.name=name
+
+	def brake():
+		print("Brake")
+
+class Toyota(Car):
+	def brake():
+		print("Brake")
+
+t = Toyota()
+print(t.brake())
+
+-----------------------------------------------------------
+5.I-->Interface Segregation
+-->in this it states that all related method do not put in one class as it will make the big interface distribute among the small interface (Segregation into smaller interface)
+-->eg:- suppose in class student printdocument,printphoto,study,marksheet etc method are there so distribute it among the other interface(class)
+
+
+
+Example Code
+class Student:
+	def __init__(self,name):
+		self.name=name
+
+	def printdocument()
+		print("Print Document")
+	def printphoto()
+		print("Print Photo")
+	def marksheet()
+		print("Marksheet")
+
+
+#so here a large interface is made so it is divided into small interface or class
+
+class PrintDocument:
+	def printdocument():
+		print("PrintDocument")
+	def printphoto():
+		print("PrintPhoto")
+
+class Marksheet():
+	def marksheet():
+		print("Marksheet")
+
+
+
+p = PrintDocument()
+print(p.printdocument())
+
+
+6.D-->Dependency Inversion
+-->In this it states that High level Module do not depend on the low level module (means direct dependency should not be there)
+--> eg.class database in that different database is there so here MySQL or mongodb is dependent on database class so instead of that we can make the different class of MySQL and mongodb class with he help of abstract class
+
+
+Example Code
+class Database:
+	def __init__(self):
+		print("Database")
+	#so here in below method every time i had to add the database class object so it is is dependent on types of database class 
+
+	def save(self,database):
+		self.database = MYSQL()
+
+
+from abc import ABC,abstractmethod
+class DataBase(ABC):
+	@abstarctmethod
+	def save(self):
+	   pass
+
+	def 	
+class MYSQL:
+	def save():
+		print("MYSQL save")
+
+
+class MongoDb():
+	def save():
+	  print("MongoDb")
+
+
+mysql = MYSQL()
+print(mysql.save())
+
+
+7.Comparsion Table
+
+summary
+S-->Single Responsibility Principle-->one class should have single responsibility.
+O-->Open/Closed Principle-->Open for extension and closed for modification.
+L-->Liskov Subsititution Principle-->Child class shoudl be behave same as parent class
+I-->Interface Segregation--> related methods should not be in one class it is divided among small interface or class
+D-->Dependency Inversion--> high class modules not depend on the low level modules 
+
+Conclusion
+-->SOLID Principles are used to make the good and readbale class which can be easy to debug and easy to test and can be readable 
