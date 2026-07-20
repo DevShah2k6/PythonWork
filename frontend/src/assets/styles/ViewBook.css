@@ -1,0 +1,109 @@
+.viewbook-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    padding: 40px;
+}
+
+
+/* Heading */
+.viewbook-title {
+    text-align: center;
+    font-size: 32px;
+    color: #2d3436;
+    margin-bottom: 30px;
+}
+
+
+/* Table container */
+.viewbook-table-container {
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    overflow-x: auto;
+}
+
+
+/* Table */
+.viewbook-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Header */
+.viewbook-table th {
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+/* Rows */
+.viewbook-table td {
+    padding: 14px;
+    text-align: center;
+    color: #444;
+    border-bottom: 1px solid #eee;
+}
+
+
+.viewbook-table tr:hover {
+    background-color: #f8f9ff;
+    transition: 0.3s ease;
+}
+
+
+/* Action buttons */
+.viewbook-action-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+
+/* Edit */
+.viewbook-edit-btn {
+    background-color: #00b894;
+    color: white;
+}
+
+
+.viewbook-edit-btn:hover {
+    background-color: #019875;
+    transform: scale(1.05);
+}
+
+
+/* Delete */
+.viewbook-delete-btn {
+    background-color: #d63031;
+    color: white;
+}
+
+
+.viewbook-delete-btn:hover {
+    background-color: #b71c1c;
+    transform: scale(1.05);
+}
+
+
+/* Home link */
+.viewbook-home {
+    text-decoration: none;
+    color: #6c5ce7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.viewbook-home:hover {
+    text-decoration: underline;
+}

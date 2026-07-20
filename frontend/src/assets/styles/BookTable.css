@@ -1,0 +1,85 @@
+.booktable-wrapper {
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    overflow-x: auto;
+}
+
+
+/* Table */
+.booktable {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+
+/* Header */
+.booktable th {
+    padding: 16px;
+    background: linear-gradient(135deg,#6c5ce7,#0984e3);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* Data rows */
+.booktable td {
+    padding: 14px;
+    text-align: center;
+    color: #444;
+    border-bottom: 1px solid #eee;
+}
+
+
+.booktable tbody tr {
+    transition: 0.3s ease;
+}
+
+
+.booktable tbody tr:hover {
+    background-color: #f5f8ff;
+    transform: scale(1.01);
+}
+
+
+/* Buttons */
+.book-edit-btn,
+.book-delete-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 4px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+
+/* Edit */
+.book-edit-btn {
+    background-color: #00b894;
+}
+
+
+.book-edit-btn:hover {
+    background-color: #009874;
+    transform: translateY(-2px);
+}
+
+
+/* Delete */
+.book-delete-btn {
+    background-color: #e74c3c;
+}
+
+
+.book-delete-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,180 @@
+.addbook-page {
+
+    height: 100vh;
+    width: 100%;
+
+    background: linear-gradient(135deg,#74ebd5,#9face6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+
+/* Home link */
+
+.addbook-home {
+
+    position:absolute;
+
+    top:35px;
+    left:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+}
+
+
+
+/* Card */
+
+.addbook-container {
+
+    width:500px;
+
+    background:white;
+
+    padding:40px 50px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+
+    text-align:center;
+}
+
+
+
+.addbook-container h2 {
+
+    color:#2d3436;
+
+    margin-bottom:10px;
+
+    font-size:22px;
+}
+
+
+
+.addbook-container h1 {
+
+    font-size:42px;
+
+    color:#2d3436;
+
+    margin-bottom:30px;
+}
+
+
+
+/* Form */
+
+.addbook-form {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+.form-group {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+.form-group label {
+
+    color:#636e72;
+
+    font-weight:600;
+
+    width:130px;
+
+    text-align:right;
+
+}
+
+
+
+.form-group input,
+.form-group select {
+
+
+    width:230px;
+
+    padding:10px;
+
+    border:1px solid #b2bec3;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+}
+
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color:#0984e3;
+
+}
+
+
+
+/* Button */
+
+.addbook-btn {
+
+    margin-top:20px;
+
+    padding:12px;
+
+    width:180px;
+
+    align-self:center;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:#0984e3;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+.addbook-btn:hover {
+
+    background:#0652dd;
+
+}
