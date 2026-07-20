@@ -1,2 +1,0 @@
-name="Java"
-print(name)
