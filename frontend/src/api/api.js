@@ -3,7 +3,9 @@
 const BASE_URL = import.meta.env.VITE_API_URL;
 console.log("API URL:", BASE_URL);
 export async function AddBooks(params) {
+    console.log("ADD BOOK FUNCTION CALLED", bookData);
     const response  = await fetch(`${BASE_URL}/add-books`,{
+        
         method:"POST",
         headers: {
             "Content-Type": "application/json"
