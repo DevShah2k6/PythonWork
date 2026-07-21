@@ -4,7 +4,7 @@
 const BASE_URL = "https://pythonwork.onrender.com";
 console.log("API URL:", BASE_URL);
 export async function AddBooks(params) {
-    console.log("ADD BOOK FUNCTION CALLED", bookData);
+  console.log("ADD BOOK FUNCTION CALLED", params);
     const response  = await fetch(`${BASE_URL}/add-books`,{
         
         method:"POST",
