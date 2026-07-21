@@ -5,6 +5,8 @@ from models import Book
 #as book is sqlalchmey model so it is written and data is apssed to save into the database
 
 def create_book(db:Session ,book:BookCreate):
+    #SQL Alchmemy object is created for every operation and then it is stroed in
+    #database
     new_book = Book(
     bookname=book.bookname,
     authorname=book.authorname,
