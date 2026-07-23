@@ -1,0 +1,130 @@
+/* EditEmployee.css */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+    background:linear-gradient(135deg,#dbeafe,#f8fafc);
+}
+
+/* Main Container */
+
+.edit-container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    box-sizing:border-box;
+}
+
+/* Title */
+
+.edit-title{
+    font-size:38px;
+    font-weight:700;
+    color:#2563eb;
+    margin-bottom:25px;
+    position:relative;
+    letter-spacing:1px;
+}
+
+.edit-title::after{
+    content:"";
+    width:110px;
+    height:4px;
+    background:linear-gradient(to right,#2563eb,#38bdf8);
+    display:block;
+    margin:10px auto;
+    border-radius:10px;
+}
+
+/* Card */
+
+.edit-form-container{
+    width:100%;
+    max-width:550px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(37,99,235,.18);
+
+    margin-left:250px;   /* Move the form to the right */
+}
+/* Form */
+
+.edit-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* Label + Input */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:600;
+    color:#1e293b;
+}
+
+.form-group input{
+    padding:14px;
+    border:2px solid #dbeafe;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+    background:#f8fbff;
+}
+
+.form-group input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+    background:white;
+}
+
+/* Update Button */
+
+.update-btn{
+    margin-top:10px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#2563eb,#0ea5e9);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.update-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(37,99,235,.3);
+}
+
+.update-btn:active{
+    transform:scale(.97);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.edit-title{
+    font-size:30px;
+}
+
+.edit-form-container{
+    padding:25px;
+}
+
+}
