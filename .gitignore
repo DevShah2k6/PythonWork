@@ -29,7 +29,7 @@ Thumbs.db
 .idea/
 
 # Generated/uploaded files
-uploads/
+upload/
 output/
 temp/
 tmp/
