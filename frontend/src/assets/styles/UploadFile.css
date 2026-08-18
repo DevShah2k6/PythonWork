@@ -1,0 +1,83 @@
+/* Full Screen Container */
+.upload-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+}
+
+/* Upload Card */
+.upload-card {
+    width: 500px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Heading */
+.upload-card h1 {
+    color: #1e40af;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* File Input */
+.upload-card input[type="file"] {
+    width: 100%;
+    padding: 18px;
+    border: 2px dashed #2563eb;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #f8fbff;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.upload-card input[type="file"]:hover {
+    background: #eef4ff;
+    border-color: #1d4ed8;
+}
+
+/* Upload Button */
+.upload-card button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-card button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* JSON Output */
+pre {
+    margin-top: 25px;
+    text-align: left;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .upload-card {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .upload-card h1 {
+        font-size: 26px;
+    }
+}

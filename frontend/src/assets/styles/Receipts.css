@@ -1,0 +1,47 @@
+.receipts-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f7fb;
+}
+
+.receipts-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.receipts-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.receipt-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.receipt-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.receipt-card p {
+  margin: 6px 0;
+}
+
+.view-receipt-btn {
+  margin-top: 12px;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.view-receipt-btn:hover {
+  background: #1d4ed8;
+}
