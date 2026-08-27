@@ -1,0 +1,68 @@
+# Python Language
+
+## Introduction
+
+Python is a **high-level, interpreted, general-purpose programming language** created by **Guido van Rossum**. It was first released in **1991**.
+
+Python is popular because its syntax is simple and easy to understand.
+
+## Main Features
+
+* Easy to learn and read
+* Interpreted language
+* Dynamically typed
+* Object-oriented
+* Open source
+* Cross-platform
+* Large number of libraries
+
+## Basic Data Types
+
+Python commonly uses:
+
+* `int` – Whole numbers
+* `float` – Decimal numbers
+* `str` – Text
+* `bool` – True/False
+* `list` – Ordered and changeable collection
+* `tuple` – Ordered and unchangeable collection
+* `set` – Collection of unique values
+* `dict` – Key-value pairs
+
+## Important Concepts
+
+Python provides:
+
+* Variables
+* Operators
+* `if-else` conditions
+* `for` and `while` loops
+* Functions
+* Classes and Objects
+* Exception Handling
+* File Handling
+* Modules and Packages
+
+## Where Python is Used
+
+Python is widely used in:
+
+* Web Development
+* Data Science
+* Machine Learning
+* Artificial Intelligence
+* Automation
+* Backend Development
+* Scripting
+
+## Simple Example
+
+```python
+name = "Dev"
+age = 21
+
+if age >= 18:
+    print(name, "is an adult")
+```
+
+**In short:** Python is a simple, powerful, and versatile programming language used for many different types of software development.

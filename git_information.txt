@@ -1,0 +1,56 @@
+# Git
+
+## Introduction
+
+Git is a **distributed version control system** used to track changes in code and manage projects.
+
+It helps developers work on projects, create different versions, and collaborate with others.
+
+## Important Git Concepts
+
+* **Repository:** Project folder tracked by Git.
+* **Commit:** Saves changes in Git history.
+* **Branch:** Separate version of the project for development.
+* **Merge:** Combines changes from different branches.
+* **Remote:** Online repository such as GitHub.
+* **Clone:** Downloads a remote repository to your computer.
+
+## Basic Git Commands
+
+```bash
+git init
+git status
+git add .
+git commit -m "message"
+git branch
+git checkout
+git pull
+git push
+git clone
+```
+
+## Git vs GitHub
+
+**Git** is the version control tool installed on your computer.
+
+**GitHub** is an online platform where Git repositories can be stored and shared.
+
+## Basic Workflow
+
+```text
+Working Directory
+       ↓
+   git add
+       ↓
+ Staging Area
+       ↓
+  git commit
+       ↓
+ Local Repository
+       ↓
+   git push
+       ↓
+ GitHub / Remote Repository
+```
+
+**In short:** Git helps you **track, manage, and collaborate on code changes**.
