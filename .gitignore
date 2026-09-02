@@ -1,14 +1,22 @@
-
-#pychache folder is ignore by git
+# ---- Python cache / bytecode ----
 __pycache__/
 *.py[cod]
 
-#Catboost info Folder
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ---- CatBoost info Folder ----
 catboost_info/
 
-
-# Dataset
+# ---- Dataset ----
 BBC news dataset.csv
 
-#File 
-vectorizer.pkl
+# ---- Distribution / packaging ----
+build/
+dist/
+*.egg-info/
