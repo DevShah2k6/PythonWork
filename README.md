@@ -25,7 +25,7 @@ Car Resale Price Prediction uses Machine Learning to estimate the selling price 
 
 **Backend**
 - Python
-- Flask / FastAPI (depending on your implementation)
+- FastAPI (depending on your implementation)
 - Machine Learning
 - Pandas
 - NumPy
