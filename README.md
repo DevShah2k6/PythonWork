@@ -15,21 +15,16 @@ Car Resale Price Prediction uses Machine Learning to estimate the selling price 
 - Data preprocessing and feature engineering.
 - Model-based price prediction.
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-**Frontend**
-- React.js
-- JavaScript
-- HTML5
-- CSS3
+| Category | Technologies |
+|---|---|
+| Frontend | React.js |
+| Backend | Python, FastAPI |
+| Machine Learning | Scikit-learn |
+| Data Processing | Pandas |
+| Model Serialization | Joblib |
 
-**Backend**
-- Python
-- FastAPI (depending on your implementation)
-- Machine Learning
-- Pandas
-- NumPy
-- Scikit-learn
 
 ## 📂 Project Structure
 
