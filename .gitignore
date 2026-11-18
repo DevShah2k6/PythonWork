@@ -1,0 +1,35 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Node modules
+frontend/node_modules/
+
+# React build files
+frontend/dist/
+frontend/build/
+
+# IDE files
+.vscode/
+.cursor/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log

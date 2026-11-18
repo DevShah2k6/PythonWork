@@ -1,0 +1,163 @@
+.prediction-page {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.prediction-main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 24px 70px;
+  flex: 1;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.prediction-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.prediction-tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.prediction-header h1 {
+  margin-bottom: 16px;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.prediction-description {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.prediction-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.07);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.form-group input + input,
+.form-group select + input {
+  margin-top: 2px;
+}
+
+.form-submit {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.form-submit button {
+  min-width: 240px;
+  height: 48px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-submit button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.prediction-footer {
+  width: 100%;
+  padding: 24px;
+  border-top: 1px solid #e2e8f0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.prediction-footer p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .prediction-main {
+    padding: 40px 16px 50px;
+  }
+
+  .prediction-form {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .form-submit {
+    grid-column: auto;
+  }
+
+  .form-submit button {
+    width: 100%;
+  }
+}
