@@ -21,9 +21,10 @@ Crop Price Prediction helps estimate crop prices using Machine Learning techniqu
 | Category | Technologies |
 |---|---|
 | Frontend | React.js |
-| Backend | Python, FastAPI |
+| Backend | Python, FastAPI, Pydantic |
 | Machine Learning | Scikit-learn |
 | Data Processing | Pandas |
+| Data Visualization | Matplotlib |
 | Model Serialization | Joblib |
 
 ## 📂 Project Structure
