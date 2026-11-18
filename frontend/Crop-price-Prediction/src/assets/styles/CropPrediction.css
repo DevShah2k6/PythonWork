@@ -1,0 +1,471 @@
+.prediction-page {
+
+  min-height: 100vh;
+
+  padding: 60px 20px;
+
+  background: #f6f9f5;
+
+}
+
+.prediction-container {
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+}
+
+/* ---------- HEADER ---------- */
+
+.prediction-header {
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+}
+
+.prediction-header span {
+
+  color: #2e7b43;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+}
+
+.prediction-header h1 {
+
+  margin: 12px 0;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: #183d25;
+
+}
+
+.prediction-header p {
+
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #68736b;
+
+  line-height: 1.7;
+
+  font-size: 16px;
+
+}
+
+/* ---------- FORM ---------- */
+
+.prediction-form {
+
+  background: #ffffff;
+
+  padding: 38px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 12px 40px rgba(30, 70, 40, 0.09);
+
+  border: 1px solid #e7eee7;
+
+}
+
+/* ---------- FORM SECTION ---------- */
+
+.form-section {
+
+  margin-bottom: 35px;
+
+}
+
+.form-section h2 {
+
+  margin-bottom: 22px;
+
+  padding-bottom: 13px;
+
+  border-bottom: 1px solid #e4ebe4;
+
+  color: #244b30;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+}
+
+/* ---------- FORM GRID ---------- */
+
+.form-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+
+}
+
+/* ---------- FORM GROUP ---------- */
+
+.form-group {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+.form-group label {
+
+  margin-bottom: 8px;
+
+  color: #35433a;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+/* ---------- INPUT & SELECT ---------- */
+
+.form-group input,
+
+.form-group select {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d7e0d8;
+
+  border-radius: 10px;
+
+  background: #fbfcfb;
+
+  color: #26352b;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: all 0.2s ease;
+
+}
+
+.form-group input::placeholder {
+
+  color: #9aa49d;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus {
+
+  border-color: #2e7b43;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(46, 123, 67, 0.1);
+
+}
+
+/* ---------- ERROR MESSAGE ---------- */
+
+.form-group small {
+
+  margin-top: 6px;
+
+  color: #dc3545;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+}
+
+/* ---------- SUBMIT BUTTON ---------- */
+
+.predict-submit {
+
+  width: 100%;
+
+  margin-top: 5px;
+
+  padding: 15px 20px;
+
+  border: none;
+
+  border-radius: 11px;
+
+  background: #2e7b43;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+}
+
+.predict-submit span {
+
+  margin-left: 8px;
+
+  font-size: 19px;
+
+}
+
+.predict-submit:hover {
+
+  background: #245f35;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 6px 18px rgba(46, 123, 67, 0.2);
+
+}
+
+.predict-submit:active {
+
+  transform: translateY(0);
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+
+  .prediction-page {
+
+    padding: 35px 15px;
+
+  }
+
+  .prediction-header h1 {
+
+    font-size: 32px;
+
+  }
+
+  .prediction-header p {
+
+    font-size: 15px;
+
+  }
+
+  .prediction-form {
+
+    padding: 25px 20px;
+
+  }
+
+  .form-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+/* ---------- PREDICTION RESULT ---------- */
+
+.prediction-result {
+
+  margin-top: 30px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  border-radius: 14px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
+
+}
+
+.prediction-result h2 {
+
+  margin: 0 0 18px;
+
+  font-size: 20px;
+
+}
+
+.prediction-result p {
+
+  margin: 10px 0;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+
+}
+
+.prediction-result small {
+
+  display: block;
+
+  margin-top: 15px;
+
+  font-size: 13px;
+
+  opacity: 0.7;
+
+}
+
+/* ---------- MODEL PERFORMANCE ---------- */
+
+.model-performance {
+
+  margin-top: 28px;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  border: 1px solid #e4eee8;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+}
+
+.model-performance h2 {
+
+  margin: 0 0 22px;
+
+  color: #244b30;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+}
+
+.performance-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+
+}
+
+.performance-item {
+
+  padding: 18px;
+
+  background: #f7fbf8;
+
+  border-radius: 12px;
+
+  border: 1px solid #e5eee8;
+
+}
+
+.performance-item span {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #68756d;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+.performance-item strong {
+
+  color: #26352c;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+}
+
+/* ---------- MOBILE MODEL PERFORMANCE ---------- */
+
+@media (max-width: 768px) {
+
+  .performance-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .performance-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .model-performance {
+
+    padding: 22px 18px;
+
+  }
+
+  .model-performance h2 {
+
+    font-size: 20px;
+
+  }
+
+}
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 450px) {
+
+  .prediction-header h1 {
+
+    font-size: 27px;
+
+  }
+
+  .prediction-form {
+
+    padding: 20px 15px;
+
+  }
+
+  .form-section h2 {
+
+    font-size: 19px;
+
+  }
+
+}
