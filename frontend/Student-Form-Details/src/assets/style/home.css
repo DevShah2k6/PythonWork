@@ -1,0 +1,205 @@
+/* ================================
+   Home Page
+================================ */
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fb, #e8eef8);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Card */
+
+.home-card {
+  width: 100%;
+  max-width: 900px;
+  padding: 60px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+.home-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.home-header h1 {
+  margin: 0 0 12px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.home-header p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+/* Buttons Container */
+
+.home-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Common Button */
+
+.home-button {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  width: 100%;
+  padding: 24px;
+
+  border-radius: 14px;
+  border: none;
+
+  cursor: pointer;
+  text-align: left;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover Effect */
+
+.home-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Click Effect */
+
+.home-button:active {
+  transform: translateY(-1px);
+}
+
+/* Add Student Button */
+
+.primary-button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+/* View Students Button */
+
+.secondary-button {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #dbe1ea;
+}
+
+.secondary-button:hover {
+  border-color: #2563eb;
+}
+
+/* Icon */
+
+.button-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* Add Student Icon */
+
+.primary-button .button-icon {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+/* View Students Icon */
+
+.secondary-button .button-icon {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* Button Title */
+
+.home-button strong {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Button Description */
+
+.home-button small {
+  display: block;
+
+  font-size: 13px;
+  line-height: 1.4;
+
+  opacity: 0.8;
+}
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+  .home-card {
+    padding: 40px 25px;
+  }
+
+  .home-header h1 {
+    font-size: 28px;
+  }
+
+  .home-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-container {
+    padding: 20px 15px;
+  }
+
+  .home-card {
+    padding: 30px 20px;
+  }
+
+  .home-header {
+    margin-bottom: 30px;
+  }
+
+  .home-header h1 {
+    font-size: 25px;
+  }
+
+  .home-header p {
+    font-size: 14px;
+  }
+
+  .home-button {
+    padding: 20px;
+  }
+}
